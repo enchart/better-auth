@@ -1529,6 +1529,9 @@ importers:
       better-sqlite3:
         specifier: ^11.3.0
         version: 11.3.0
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
       drizzle-orm:
         specifier: ^0.33.0
         version: 0.33.0(@libsql/client@0.12.0)(@prisma/client@5.20.0(prisma@5.20.0))(@types/better-sqlite3@7.6.11)(@types/pg@8.11.10)(@types/react@18.3.9)(better-sqlite3@11.3.0)(bun-types@1.1.30)(kysely@0.27.4)(mysql2@3.11.3)(pg@8.13.0)(postgres@3.4.4)(prisma@5.20.0)(react@18.3.1)
@@ -7394,6 +7397,11 @@ packages:
 
   cronstrue@2.50.0:
     resolution: {integrity: sha512-ULYhWIonJzlScCCQrPUG5uMXzXxSixty4djud9SS37DoNxDdkeRocxzHuAo4ImRBUK+mAuU5X9TSwEDccnnuPg==}
+    hasBin: true
+
+  cross-env@7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
     hasBin: true
 
   cross-fetch@4.0.0:
@@ -19753,7 +19761,7 @@ snapshots:
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 20.16.9
+      '@types/node': 22.3.0
 
   '@typeschema/class-validator@0.2.0(@types/json-schema@7.0.15)(class-validator@0.14.1)':
     dependencies:
@@ -22134,6 +22142,10 @@ snapshots:
   croner@8.1.1: {}
 
   cronstrue@2.50.0: {}
+
+  cross-env@7.0.3:
+    dependencies:
+      cross-spawn: 7.0.3
 
   cross-fetch@4.0.0(encoding@0.1.13):
     dependencies:

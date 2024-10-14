@@ -9,9 +9,9 @@
         "directory": "packages/better-auth"
     },
     "scripts": {
-        "build": "NODE_OPTIONS='--max-old-space-size=4000' tsup --clean --dts",
-        "dev": "NODE_OPTIONS='--max-old-space-size=4000' tsup --watch --sourcemap",
-        "dev:dts": "NODE_OPTIONS='--max-old-space-size=8192' tsup --watch --dts",
+        "build": "cross-env NODE_OPTIONS='--max-old-space-size=4000' tsup --clean --dts",
+        "dev": "cross-env NODE_OPTIONS='--max-old-space-size=4000' tsup --watch --sourcemap",
+        "dev:dts": "cross-env NODE_OPTIONS='--max-old-space-size=8192' tsup --watch --dts",
         "test": "pnpm prisma:push && vitest",
         "prisma:push": "prisma db push --schema src/adapters/prisma-adapter/test/schema.prisma",
         "test:adapters": "pnpm prisma:push && vitest adapters",
@@ -63,6 +63,7 @@
         "@types/prompts": "^2.4.9",
         "@types/react": "^18.3.3",
         "better-sqlite3": "^11.3.0",
+        "cross-env": "^7.0.3",
         "drizzle-orm": "^0.33.0",
         "happy-dom": "^15.7.4",
         "hono": "^4.5.4",
